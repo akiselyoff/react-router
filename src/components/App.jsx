@@ -3,6 +3,7 @@ import { About } from "../pages/About";
 import { Home } from "../pages/Home";
 import { ProductDetails } from "../pages/ProductDetails";
 import { Products } from "../pages/Products";
+import { NotFound } from "../pages/NotFound";
 import { Mission } from "./Mission";
 import { Team } from "./Team";
 import { Reviews } from "./Reviews";
@@ -20,6 +21,7 @@ export const App = () => {
         </Route>
         <Route path="products" element={<Products />} />
         <Route path="products/:id" element={<ProductDetails />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );
